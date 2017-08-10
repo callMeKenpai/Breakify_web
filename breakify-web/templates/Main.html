@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style>
+body
+{
+	text-align:center;
+	vertical-align:middle;
+	clear:right;
+}
+
+</style>
+<head>
+	<title>Breakify</title>
+	<script src="popup.js"></script>
+	<style>
+		#display, #settings {margin-top: 4px;}
+		#modify {margin-bottom: 4px;}
+		align: center;
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+
+    <div id="display" class="row-fluid">
+        <div class="span12">
+            <div class="progress progress-striped active progress-success progress-large">
+                <div class="bar" id="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modify" class="row-fluid">
+        <div class="span12">
+            <button id="cancel" class="offset1 btn btn-danger">cancel</button>
+            <button id="resume" class="offset1 btn btn-success">resume</button>
+            <button id="pause" class="offset1 btn btn-warning">pause</button>
+            <button id="restart" class="offset1 btn">restart</button>
+        </div>
+    </div>
+
+    <div id="settings" class="row-fluid">
+        <div class="span12">
+            <form class="well" name="choices">
+                <div class="radio"><input type="radio" name="radio" value="0" checked="checked">
+                <span id="s0">60</span>&nbsp;min</div>
+								<!--for minutes changes: only change int inbetween span tag -->
+
+                <div class="radio"><input type="radio" name="radio" value="1">
+                <span id="s1">90</span>&nbsp;min</div>
+
+                <div class="radio"><input type="radio" name="radio" value="2">
+                <span id="s2">120</span>&nbsp;min</div>
+								<div>&nbsp;</div>
+                <button type="button" id="start" class="btn btn-success">Start</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div>&nbsp;</div> <!--Break between-->
+
+<a href="/upbeat">
+	<img title="Upbeat" src="resources/happy.png" width="192px" height="192px"/><br>
+</a>
+
+<a href="/chill">
+	<img title="Chill" src="resources/chill.png"/><br>
+</a>
+<a href="/intense">
+	<img title="Intense" src="resources/intense.png"/><br>
+</a>
+<a href="focused">
+	<img title="Focused" src="resources/focused.png"/><br>
+</a>
+<a href="zen">
+	<img title="Zen" src="resources/zen.png"/><br>
+</>
+</body>
+</html>
